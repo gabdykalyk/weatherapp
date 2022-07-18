@@ -1,0 +1,13 @@
+@import "bootstrap";
+@import "font-awesome";
+
+.datetime {
+  background-color: pink;
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 50%;
+  border: 2px solid black;
+  .unit {
+    font-weight: 700;
+  }
+}

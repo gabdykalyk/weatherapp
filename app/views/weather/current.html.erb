@@ -1,0 +1,14 @@
+<h1>Температура сейчас</h1>
+<p>Республика Казахстан, город Алматы</p>
+
+<%= @output[0]["WeatherText"] %>
+<i class="fa-solid fa-sun"></i>
+<br>
+<%= @output[0]["Temperature"]["Metric"]["Value"] %>
+<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+<br>
+<% if !@output[0]["HasPrecipitation"] %>
+  <div>Осадков не ожидается</div>
+<% else %>
+  <div>Ожидаются осадки</div>
+<% end %>

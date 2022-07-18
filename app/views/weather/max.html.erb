@@ -1,0 +1,14 @@
+<h1>Максимальная температура</h1>
+<p>Республика Казахстан, город Алматы</p>
+
+<% @max = @output[0]["Temperature"]["Metric"]["Value"]%>
+<% @output.each do |i|%>
+  <% if @max < i["Temperature"]["Metric"]["Value"] %>
+    <% @max =  i["Temperature"]["Metric"]["Value"]%>
+  <% end %>
+
+<% end %>
+
+<%= @max %>
+<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+

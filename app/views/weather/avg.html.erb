@@ -1,0 +1,15 @@
+<h1>Средняя температура</h1>
+<p>Республика Казахстан, город Алматы</p>
+
+<% @sum = 0%>
+<% @output.each do |i|%>
+
+  <% @sum += i["Temperature"]["Metric"]["Value"].to_f %>
+
+<% end %>
+
+<% @avg = @sum / @output.length %>
+
+<%= @avg.round(2) %>
+<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+

@@ -1,0 +1,14 @@
+<h1>За последние 24 часа</h1>
+<p>Республика Казахстан, город Алматы</p>
+
+<% @output.each do |i|%>
+
+<div class="datetime">
+  <%= Time.parse(i["LocalObservationDateTime"]).httpdate %> - 
+  <span class="unit">
+    <%= i["Temperature"]["Metric"]["Value"] %>
+    <%= i["Temperature"]["Metric"]["Unit"] %>
+  </span>
+</div>
+
+<% end %>

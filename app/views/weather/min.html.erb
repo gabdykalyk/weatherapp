@@ -1,0 +1,14 @@
+<h1>Минимальная температура</h1>
+<p>Республика Казахстан, город Алматы</p>
+
+<% @min = @output[0]["Temperature"]["Metric"]["Value"]%>
+<% @output.each do |i|%>
+  <% if @min > i["Temperature"]["Metric"]["Value"] %>
+    <% @min =  i["Temperature"]["Metric"]["Value"]%>
+  <% end %>
+
+<% end %>
+
+<%= @min %>
+<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+
