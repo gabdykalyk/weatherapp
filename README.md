@@ -1,24 +1,5 @@
-# README
+# WEATHER APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Application, that shows Current weather, 24 hour Historical weather, Maximum, Minimum and Average weather in Almaty, Kazakhstan.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Heroku deploy will be ready soon.
