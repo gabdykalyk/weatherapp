@@ -3,10 +3,10 @@
 
 <%= @output[0]["WeatherText"] %>
 <i class="fa-solid fa-sun"></i>
-<br>
-<%= @output[0]["Temperature"]["Metric"]["Value"] %>
-<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
-<br>
+<h3>
+  <%= @output[0]["Temperature"]["Metric"]["Value"] %>
+  <%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+</h3>
 <% if !@output[0]["HasPrecipitation"] %>
   <div>Осадков не ожидается</div>
 <% else %>

@@ -34,4 +34,10 @@ class WeatherController < ApplicationController
   def avg
     jsonparce
   end
+
+
+  def by_time
+    jsonparce
+    @timestamp = params[:q]
+  end
 end

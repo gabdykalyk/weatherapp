@@ -9,7 +9,7 @@
 <% end %>
 
 <% @avg = @sum / @output.length %>
-
-<%= @avg.round(2) %>
-<%= @output[0]["Temperature"]["Metric"]["Unit"] %>
-
+<h3>
+  <%= @avg.round(2) %>
+  <%= @output[0]["Temperature"]["Metric"]["Unit"] %>
+</h3>
