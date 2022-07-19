@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'weather/min'
   get 'weather/avg'
   get 'weather/by_time'
+  get 'weather/404'
 end

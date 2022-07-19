@@ -11,16 +11,17 @@
   <% if @timestamp == i["EpochTime"].to_s %>
     <% @result = "#{Time.parse(i["LocalObservationDateTime"]).httpdate} + #{i["Temperature"]["Metric"]["Value"]} + #{i["Temperature"]["Metric"]["Unit"]}" %>
   <% end %>
-
 <% end %>
 
-
-
-<div class="datetime mt-3">
-  <span class="unit">
-    <%= @result %>
-  </span>
-</div>
+<% if @result.empty? %>
+  <div class="mt-3">Введите корректные данные timestamp</div>
+<% else %>
+  <div class="datetime mt-3">
+    <span class="unit">
+      <%= @result %>
+    </span>
+  </div>
+<% end %>
 
 <div class="mt-3">
   Варианты: 1658170620, 1658167020, 1658163420

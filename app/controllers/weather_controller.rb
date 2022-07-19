@@ -40,4 +40,5 @@ class WeatherController < ApplicationController
     jsonparce
     @timestamp = params[:q]
   end
+
 end
